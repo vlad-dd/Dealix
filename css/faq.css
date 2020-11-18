@@ -1,0 +1,108 @@
+body{
+    font-family: 'Baloo Bhaina 2', cursive;
+    background-color: #eee;
+}
+
+.container-fluid{
+    width: 40%;
+    margin-top: 100px;
+    margin: 0 auto;
+}
+
+.container-fluid h2{
+    color: rebeccapurple;
+    position: relative;
+    width: 23rem;
+}
+
+.container-fluid h2:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    width: 67px;
+    height: 2px;
+    background-color: #625bff;
+}
+
+.accordion{
+    width: 100%;
+    padding: 0 5px;
+    border: 2px solid #625bff;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    margin: 10px 0 ;
+    align-items: center;
+}
+
+.accordion .icon{
+    margin: 0 10px 0 0;
+    width: 30px;
+    height: 30px;
+    background: url("/img/butt.png") no-repeat 8px 7px #625bff ;
+    border-radius: 50%;
+    float: left;
+    transition: all .5s ease-in;
+}
+
+.accordion h5{
+    font-size: 22px;
+    margin: 0;
+    padding: 3px 0 0 0;
+    font-weight: normal;
+    color: #1f5c9a;
+}
+
+
+.active .icon{
+    background: url("/img/butt.png") no-repeat 8px -25px #fff;
+}
+
+.active{
+    background-color: #6dbfff;
+    color: #fff;
+}
+
+.active h5{
+    color: #fff;
+}
+
+.panel{
+    padding: 0 15px;
+     border-left: 1px solid #6dbfff;
+    margin-left: 25px;
+    font-size: 14px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .5s ease-in;
+}
+
+.a2a_button_facebook{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #625bff;
+    color: white;
+    text-align: left;
+}
+.a2a_button_twitter{
+    position: fixed;
+    left: 40px;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+
+}
+
+.a2a_dd{
+    position: fixed;
+    left: 80px;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+}
